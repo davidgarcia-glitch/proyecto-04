@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  color: #2E2F38;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  background-color: #2E2F38;
+  width: 40%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -1;
+
+}
+
+
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #2E2F38;
+}
+
+.primary {
+  margin-left: 130px;
+}
+
+.primary a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.primary a:hover {
+  color: #FA504D;
+}
+
+.primary ul {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+.login ul {
+  display: flex;
+  list-style: none;
+  gap: 40px; 
+}
+
+.login {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.login li:first-child a {
+  color: #FFFFFF;
+}
+
+.login li:last-child a {
+  color: #FFFFFF;
+  background-color: #FA504D;
+  padding: 8px 28px;
+  transition: all 0.5s ease;
+}
+
+.login li:last-child a:hover {
+  color: #FA504D;
+  background-color: #FFFFFF;
+  padding: 8px 28px;
+}
+
+.hero {
+  grid-column: 1 / span 1;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  height: 400px;
+}
+
+.hero h1 {
+  font-family: "Belgrano", serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 70px;
+  margin-bottom: 0;
+}
+
+.hero p {
+  color: #8E8E8E;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.hero::before {
+  content: '';
+  background-color: #FA504D;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  bottom: 429px;
+}
+
+.hero .lazo {
+  position: absolute;
+  width: 200px;
+  right: 1150px;
+  bottom: 587px;
+}
+
+.hero .hero_butons {
+  display: flex;
+}
+
+.hero .button {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FA504D;
+  padding: 15px 60px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.hero .button:hover {
+  color: #FA504D;
+  background-color: #FFFFFF;
+}
+
+.hero .arrow {
+  align-items: center;
+  margin-left: 20px;
+  color: #2E2F38;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex; /* Usamos flexbox para alinear la imagen y el texto */
+
+}
+
+.hero .arrow img {
+  width: 30px;
+}
+
+
+.featured h3 {
+  font-family: "Belgrano", serif;
+  font-weight: 400;
+  color: #2E2F38;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.imgs_featured {
+  display: flex;
+  gap: 30px;
+}
+
+.imgs_featured img {
+  width: 45%;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #8E8E8E;
+}
+
+.featured {
+  grid-column: 1 / span 1;
+  padding-right: 40px;
+}
+
+.nft {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  padding-left: 45px;
+  padding-right: 10px
+}
+.nft_data {
+  background-color: white;
+  padding: 16px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: 20px;
+  
+}
+
+.imagen_nft img {
+  max-width: 95%;
+  margin-left: 20px;
+}
+
+.nft_header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+
+.nft_user {
+  display: flex;
+}
+
+.user_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.nft_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nft_username {
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.nft_name {
+  color: #2E2F38;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.nft_price_current {
+  color: #8E8E8E;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nft_price_eth {
+  color: #2E2F38;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nft_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft_button a:last-child {
+  text-decoration: none;
+  color: #FA504D;
+  font-weight: 600;
+  font-size: 12px;
+  width: 125px;
+}
+
+.nft_button a:first-child {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FA504D;
+  padding: 12px 80px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.nft_numbers {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} 
+
+.nft_numbers .number p {
+  color: #FA504D;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nft_numbers .title {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 300;
+}
+
